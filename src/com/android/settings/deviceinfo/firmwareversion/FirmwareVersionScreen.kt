@@ -47,6 +47,7 @@ class FirmwareVersionScreen : PreferenceScreenCreator, PreferenceSummaryProvider
     override fun getPreferenceHierarchy(context: Context) =
         preferenceHierarchy(this) {
             +FirmwareVersionDetailPreference()
+            +MaintainerPreference()
             +SecurityPatchLevelPreference()
             +MainlineModuleVersionPreference()
             +BasebandVersionPreference()
